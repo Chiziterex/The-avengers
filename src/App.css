@@ -1,38 +1,438 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --bg-color-: rgb(250, 196, 48);
+  --bg-color-2-: whitesmoke;
+  --bg-color-3-: rgb(228, 221, 221);
+  --txt-color-: #000;
+  --txt-color-2-: #fff;
+  --txt-color-3-: #333;
+  --txt-color-4-: #f70505;
+  --blue: rgb(0, 0, 255);
+  --border-color-: #999;
+  --backdrop-color: rgb(0, 0, 0, 0.3);
+  --backdrop-color-2: rgb(255, 255, 255, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  /* outline:2px solid red; */
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+header {
+  position: fixed;
+  width: 90vw;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4%;
+  background-color: var(--bg-color-2-);
+  border-radius: 3px;
+  margin: 3rem 4rem 3rem 0;
+  overflow: hidden;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+header ul li {
+  color: var(--txt-color-);
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in;
+}
+
+header ul li:hover {
+  color: var(--txt-color-4-);
+  border-bottom: 1px solid var(--txt-color-4-);
+}
+
+/* home */
+
+.home {
+  background-image: url("https://i.blogs.es/18a70c/juego-de-los-vengadores/450_1000.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  line-height: 1.75rem;
+}
+
+.home .backdrop-color {
+  background: var(--backdrop-color);
+  /* padding: 200px 700px; */
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.home .backdrop-color .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--txt-color-2-);
+  min-height: 100vh;
+}
+
+.home .backdrop-color .content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  word-spacing: 1rem;
+  text-transform: uppercase;
+  border-top: 1px solid var(--txt-color-2-);
+  border-bottom: 1px solid var(--txt-color-2-);
+  padding: 1.5rem 0;
+  animation: slide-in 1.5s linear;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-50%);
+    color: transparent;
+  }
+  to {
+    transform: translateY(0);
+    color: var(--txt-color-2-);
+  }
+}
+
+.home .backdrop-color .content p {
+  font-size: 1rem;
+}
+
+.home .backdrop-color .content .btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home .backdrop-color .content .btn-container button {
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--txt-color-4-);
+  border-radius: 3px;
+  border: none;
+  color: var(--txt-color-2-);
+  transition: all 0.2s ease-in;
+}
+
+.home .backdrop-color .content .btn-container button:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--backdrop-color) 50%,
+    var(--txt-color-4-) 50%
+  );
+}
+
+.home .backdrop-color .content .btn-container button:nth-child(2) {
+  font-weight: 600;
+  background-color: var(--txt-color-3-);
+  border: none;
+  border: 0.5px solid var(--txt-color-2-);
+  animation: red-flash 3s linear infinite;
+}
+
+@keyframes red-flash {
+  from {
+    color: var(--txt-color-4-);
+  }
+  to {
+    color: var(--txt-color-2-);
+  }
+}
+
+/* news */
+
+.news {
+  background-color: var(--txt-color-);
+}
+
+.news .backdrop-color {
+  background-color: var(--backdrop-color-2);
+}
+
+.news .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  line-height: 1.125;
+}
+
+.news .content #line {
+  border: 1px dashed var(--txt-color-4-);
+  width: 100px;
+}
+
+.news .content h3 {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  text-transform: capitalize;
+  color: var(--txt-color-2-);
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.news .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem 0 2rem;
+  gap: 4rem;
+}
+
+.news .content .box-container .box {
+  max-width: 500px;
+  height: 400px;
+}
+
+.news .content .box-container .box img {
+  width: 270px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.news .content .box-container .box .box-info {
+  background-color: var(--txt-color-2-);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 300px;
+  transform: translateX(5%);
+}
+
+.news .content .box-container .box .box-info h4 {
+  font-size: 1rem;
+  color: var(--txt-color-3-);
+  margin-bottom: 0.5rem;
+}
+
+.news .content .box-container .box .box-info p {
+  font-size: 0.875rem;
+  color: var(--txt-color-3-);
+  margin-bottom: 1rem;
+}
+
+.news .content .box-container .box .box-info p span {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.news .content .box-container .box .box-info .tinyinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.news .content .box-container .box .box-info .tinyinfo p:nth-child(1):after {
+  content: "|";
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  font-weight: 700;
+}
+
+/* team */
+.team {
+  background-color: var(--txt-color-2-);
+}
+
+.team .backdrop-color {
+  background-color: var(--backdrop-color);
+}
+
+.team .content {
+  padding: 1rem 2rem;
+}
+
+.team .content h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.team .content h3 span {
+  color: var(--txt-color-4-);
+}
+
+.team .content .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.team .content .box-container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team .content .box-container .box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.team .content .box-container .box .member-info {
+  background-color: var(--backdrop-color-2);
+  color: var(--txt-color-);
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+}
+
+.team .content .box-container .box .member-info h4 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--txt-color-4-);
+  width: fit-content;
+}
+
+.team .content .box-container .box .member-info p {
+  font-size: 0.875rem;
+}
+
+/* contact */
+
+.contact {
+  background-color: var(--blue);
+}
+
+.contact .backdrop-color {
+  background-color: var(--backdrop-color);
+}
+
+.contact .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3rem;
+  color: var(--txt-color-2-);
+}
+
+.contact .content .signUp {
+  display: block;
+  text-align: center;
+  line-height: 1.125;
+}
+
+.contact .content .signUp p {
+  font-size: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.contact .content .signUp p span {
+  color: var(--txt-color-4-);
+  font-weight: 800;
+  font-size: 2rem;
+  transform: rotate(12deg);
+}
+
+.contact .content .signUp p:nth-child(2) {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact .content .signUp p:nth-child(3) {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.contact .content .report p {
+  font-size: 1.2rem;
+}
+
+.contact .content .report p span {
+  color: var(--txt-color-4-);
+  font-weight: 800;
+  font-size: 2rem;
+  transform: rotate(-12deg);
+}
+
+.contact .content .report #call{
+  color: var(--txt-color-4-);
+  font-weight: 800;
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact .content .report #or{
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact .content .report form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  background-color: var(--bg-color-2-);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top:1rem ;
 }
 
-.App-link {
-  color: #61dafb;
+.contact .content .report form input,
+.contact .content .report form textarea{
+  padding: 0.5rem ;
+  font-size: 1rem;
+  border: 1px solid var(--border-color-);
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact .content .report form input:focus,
+.contact .content .report form input:active,
+.contact .content .report form textarea:focus,
+.contact .content .report form textarea:active{
+  border: 2px solid var(--blue);
+}
+
+.contact .content .report form input[type="submit"]{
+  background-color: color-mix(
+    in srgb,
+    var(--backdrop-color) 20%,
+    var(--txt-color-4-) 80%
+  );
+  border: none;
+  color: var(--txt-color-2-);
+  transition: all .2s ease-in;
+}
+
+.contact .content .report form input[type="submit"]:hover{
+  background-color: var(--txt-color-3-);
 }
