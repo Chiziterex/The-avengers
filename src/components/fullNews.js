@@ -13,7 +13,7 @@ const FullNews = () => {
             <div className="box-container">
               {NewsData.map((news) => (
                 <div key={news.id} className="box">
-                  <img src={news.img} alt={news.name} />
+                  <img src={news.img} alt={news.alt} />
                   <div className="box-info">
                     <h4>{news.h4}</h4>
                     <p>

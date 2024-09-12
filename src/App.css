@@ -34,6 +34,7 @@ header {
   width: 90vw;
   top: 0;
   right: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,6 +70,23 @@ header ul li {
 header ul li:hover {
   color: var(--txt-color-4-);
   border-bottom: 1px solid var(--txt-color-4-);
+}
+
+/* Sidebar styles */
+header.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust based on your design */
+  height: 100vh; /* Full viewport height */
+  background-color: #333; /* Sidebar background color */
+  transform: translateX(-100%); /* Hide the sidebar offscreen by default */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Show the sidebar when toggled */
+header.sidebar.open {
+  transform: translateX(0);
 }
 
 /* home */
@@ -517,3 +535,4 @@ header ul li:hover {
 .fullTeam .content {
   border-bottom:5px solid var(--txt-color-3-);
 }
+

@@ -21,7 +21,7 @@ const Team = () => {
               <div className="box">
                 <img src={Thor} alt=""></img>
                 <div className="member-info">
-                  <h4>Thor</h4>
+                  <h4>Thor Odinson</h4>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit
                     Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -62,7 +62,7 @@ const Team = () => {
                   </p>
                 </div>
               </div>
-              <div className="box">
+              <div className="box hide">
                 <img src={IM} alt=""></img>
                 <div className="member-info">
                   <h4>Iron man</h4>
@@ -74,7 +74,7 @@ const Team = () => {
                 </div>
               </div>
               <Link to="/fullteam">
-              <p className="btn">See more</p>
+              <p className="btn">See all</p>
               </Link>
             </div>
           </div>

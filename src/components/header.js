@@ -2,6 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+//   document.addEventListener('DOMContentLoaded', function() {
+//     const sidebar = document.querySelector('header.sidebar');
+//     const toggleButton = document.querySelector('.toggle-sidebar');
+
+//     toggleButton.addEventListener('click', function() {
+//         sidebar.classList.toggle('open');
+//     });
+// });
   return (
     <>
       <header>
@@ -11,6 +19,7 @@ const Header = () => {
         ></img>
 
         <ul className="links">
+          <p>≡</p>
           <Link to="/home">
             <li>Home</li>
           </Link>
@@ -22,6 +31,7 @@ const Header = () => {
           </Link>
           <li>Contact</li>
         </ul>
+        
       </header>
     </>
   );
