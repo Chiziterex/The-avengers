@@ -43,6 +43,9 @@
         word-spacing: 0.5rem;
         padding: 1.5rem 0;
       }
+      .home .backdrop-color .content .btn-container button {
+        font-size: 1rem;
+      }
     .team .content h3 {
         text-align: center;
         font-size: 2rem;
@@ -50,11 +53,13 @@
         margin-bottom: 1.5rem;
       }
       
-    .team .content .box-container .box img{
+    /* .team .content .box-container .box img{
         width: 150px;
         height: 70px;
-        object-fit: cover;
-        border-radius: 4;
+        object-fit: contain;
+      } */
+      .contact{
+        font-size: 50%;
       }
       .contact .content .signUp p:nth-child(3) {
         margin-bottom: 0.5rem;
@@ -62,6 +67,7 @@
       .contact .content {
         padding: 1rem;
       }
+      
 }
 
 
@@ -76,5 +82,6 @@
       .home .backdrop-color .content{
         min-height: 100vh;
       }
+      
   
 }

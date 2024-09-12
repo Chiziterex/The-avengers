@@ -1,4 +1,5 @@
 import React from "react";
+import { FaMailBulk } from "react-icons/fa";
 
 const Contact = () => {
     return (
@@ -10,7 +11,7 @@ const Contact = () => {
                         <div className="signUp">
                             <p>Feel you've got it in you <span className= "question">?</span></p>
                             <p>Record a video of yourself being special and send to us</p>
-                            <p>theAvengers@gmail.com</p>
+                            <p><span><FaMailBulk /> </span>theAvengers@gmail.com</p>
                         </div>
 
                         <div className="report">
