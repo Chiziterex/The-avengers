@@ -1,5 +1,6 @@
 import React from "react";
 import Spiderman from "../assets/spiderman.jpg";
+import RustedHelmet from "../assets/rusted.png"
 
 const News = () => {
   return (
@@ -29,7 +30,7 @@ const News = () => {
                 </div>
               </div>
               <div className="box">
-                <img src={Spiderman} alt="iron man's rusted helmet"></img>
+                <img src={RustedHelmet} alt="iron man's rusted helmet"></img>
                 <div className="box-info">
                   <h4>Viral photo of iron man's rusted helmet</h4>
                   <p>

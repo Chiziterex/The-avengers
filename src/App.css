@@ -304,6 +304,7 @@ header ul li:hover {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  background-color: transparent;
   border-radius: 4px;
 }
 
