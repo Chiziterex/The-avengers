@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Spiderman from "../assets/spiderman.jpg";
 import RustedHelmet from "../assets/rusted.png"
 
@@ -56,6 +57,9 @@ const News = () => {
                 </div>
               </div>
             </div>
+            <Link to="/fullNews">
+            <p className="btn">See more</p>
+            </Link>
           </div>
         </div>
       </section>

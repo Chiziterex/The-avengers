@@ -41,7 +41,6 @@ header {
   background-color: var(--bg-color-2-);
   border-radius: 3px;
   margin: 3rem 4rem 3rem 0;
-  overflow: hidden;
 }
 
 header img {
@@ -62,6 +61,7 @@ header ul li {
   color: var(--txt-color-);
   font-size: 0.825rem;
   font-weight: 600;
+  cursor: pointer;
   text-transform: uppercase;
   transition: all 0.4s ease-in;
 }
@@ -180,7 +180,7 @@ header ul li:hover {
 
 .news .backdrop-color {
   background-color: var(--backdrop-color-2);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .news .content {
@@ -211,13 +211,13 @@ header ul li:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   gap: 4rem;
 }
 
 .news .content .box-container .box {
   max-width: 500px;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .news .content .box-container .box img {
@@ -267,6 +267,18 @@ header ul li:hover {
   font-weight: 700;
 }
 
+.news .content .btn {
+  background-color: color-mix(in srgb, var(--blue) 70%, var(--backdrop-color) 30%);
+  padding: 0.5rem 1rem;
+  color: var(--txt-color-2-);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.news .content .btn:hover {
+  background-color: color-mix(in srgb, var(--blue) 40%, var(--backdrop-color) 60%);
+}
+
 /* team */
 .team {
   background-color: var(--txt-color-2-);
@@ -274,7 +286,7 @@ header ul li:hover {
 
 .team .backdrop-color {
   background-color: var(--backdrop-color);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .team .content {
@@ -325,6 +337,7 @@ header ul li:hover {
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 700;
+  text-transform: capitalize;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid var(--txt-color-4-);
   width: fit-content;
@@ -332,6 +345,18 @@ header ul li:hover {
 
 .team .content .box-container .box .member-info p {
   font-size: 0.875rem;
+}
+
+.team .content .box-container .btn {
+  background-color: color-mix(in srgb, var(--blue) 80%, var(--backdrop-color) 20%);
+  padding: 0.5rem 1rem;
+  color: var(--txt-color-2-);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.team .content .box-container .btn:hover {
+  background-color: color-mix(in srgb, var(--blue) 40%, var(--backdrop-color) 60%);
 }
 
 /* contact */
@@ -342,7 +367,7 @@ header ul li:hover {
 
 .contact .backdrop-color {
   background-color: var(--backdrop-color);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .contact .content {
@@ -452,7 +477,7 @@ header ul li:hover {
 
 .footer .backdrop-color{
   background-color: var(--backdrop-color);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .footer .backdrop-color .content{
@@ -480,6 +505,7 @@ header ul li:hover {
 
 .footer .backdrop-color .content .links li{
   cursor: pointer;
+  color: var(--txt-color-);
 }
 
 .footer .backdrop-color .content .links li:hover{
@@ -487,3 +513,7 @@ header ul li:hover {
   color: var(--txt-color-4-);
 }
 
+/* full team */
+.fullTeam .content {
+  border-bottom:5px solid var(--txt-color-3-);
+}

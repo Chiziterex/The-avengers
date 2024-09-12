@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Spiderman from "../assets/web.png"
 import Thor from "../assets/thor.png"
 import HawkEye from "../assets/hawk_eye.png"
 import BW from "../assets/black_widow.png"
 import IM from "../assets/iron_man.png"
+
 
 const Team = () => {
   return (
@@ -71,6 +73,9 @@ const Team = () => {
                   </p>
                 </div>
               </div>
+              <Link to="/fullteam">
+              <p className="btn">See more</p>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
@@ -17,9 +18,13 @@ const Footer = () => {
               <FaPhone />
             </div>
             <ul className="links">
+              <Link to="/home">
               <li>Home</li>
+              </Link>
               <li>News</li>
+              <Link to="/fullTeam">
               <li>Team</li>
+              </Link>
               <li>Contact</li>
             </ul>
             <p>© Marvel 2024</p>
