@@ -1,11 +1,17 @@
-import Spiderman from "../assets/spiderman.jpg"
+import Webbed from "../assets/webbed.png"
 import RustedHelmet from "../assets/rusted.png"
 import BlackWidow from "../assets/black_widow.png"
+import Loki from "../assets/loki.png"
+import Mask from "../assets/mask.png"
+import Portal from "../assets/portal.png"
+import Smash from "../assets/smash.png"
+import Merch from "../assets/merch.png"
+import Car from "../assets/car.png"
 
 export const NewsData = [
     {
         id: 1,
-        img: Spiderman,
+        img: Webbed,
         h4: "The criminals at the Bank of America just got webbed",
         p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing..",
         name: "mark john",
@@ -33,7 +39,7 @@ export const NewsData = [
     },
     {
         id: 4,
-        img: BlackWidow,
+        img: Merch,
         h4: "Captain America's merch now on sale",
         p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing....",
         name: "Sanchez Obi",
@@ -42,7 +48,7 @@ export const NewsData = [
     },
     {
         id: 5,
-        img: BlackWidow,
+        img: Loki,
         h4: "Loki up to something?!",
         p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing...",
         name: "Rodri",
@@ -51,7 +57,7 @@ export const NewsData = [
     },
     {
         id: 6,
-        img: BlackWidow,
+        img: Smash,
         h4: "The Hulk delivers yet another pounded criminal",
         p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing...",
         name: "Jude Ike",
@@ -60,7 +66,7 @@ export const NewsData = [
     },
     {
         id: 7,
-        img: BlackWidow,
+        img: Portal,
         h4: "Another portal? What's the matter Dr Strange",
         p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing....",
         name: "Sanchez Obi",
@@ -69,11 +75,20 @@ export const NewsData = [
     },
     {
         id: 8,
-        img: BlackWidow,
+        img: Mask,
         h4: "Spiderman's real face almost caught on camera. Netizens react",
         p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing...",
         name: "Sanchez Obi",
         time: "08/09/24",
+        alt: "Picture could not load",
+    },
+    {
+        id: 8,
+        img: Car,
+        h4: "Iron man's new ride sighted",
+        p: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing...",
+        name: "Tamara Will",
+        time: "07/09/24",
         alt: "Picture could not load",
     }
 ]
