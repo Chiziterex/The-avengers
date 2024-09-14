@@ -50,6 +50,7 @@ header {
 
 header.scroll{
   margin-top: 0;
+  transition: all .4s ease;
 }
 
 header img {

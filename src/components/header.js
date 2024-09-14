@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   const changeMargin = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 40) {
       setHeader(true)
     } else {
       setHeader(false)
