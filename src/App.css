@@ -48,6 +48,10 @@ header {
   margin: 3rem 4rem 3rem 0;
 }
 
+header.scroll{
+  margin-top: 0;
+}
+
 header img {
   height: 50px;
   width: 50px;

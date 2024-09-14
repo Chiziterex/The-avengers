@@ -4,14 +4,25 @@ import { FaInstagram, FaTwitter, FaMailBulk, FaPhone } from "react-icons/fa";
 
 const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
+  const [header, setHeader] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarActive(!isSidebarActive);
   };
 
+  const changeMargin = () => {
+    if (window.scrollY >= 80) {
+      setHeader(true)
+    } else {
+      setHeader(false)
+    }
+  };
+
+  window.addEventListener('scroll', changeMargin);
+
   return (
     <>
-      <header>
+      <header className={header ? "scroll" : ""}>
         <img
           src="https://i.pinimg.com/736x/9a/4b/c6/9a4bc6e595168f93e120c88fe3886514.jpg"
           alt="avengers logo"

@@ -10,11 +10,13 @@ import FullTeam from "./components/fullTeam";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import NoPage from "./components/nopage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
