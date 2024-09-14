@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram, FaTwitter, FaMailBulk, FaPhone } from "react-icons/fa";
 
 const Header = () => {
-//   document.addEventListener('DOMContentLoaded', function() {
-//     const sidebar = document.querySelector('header.sidebar');
-//     const toggleButton = document.querySelector('.toggle-sidebar');
+  const [isSidebarActive, setIsSidebarActive] = useState(false);
 
-//     toggleButton.addEventListener('click', function() {
-//         sidebar.classList.toggle('open');
-//     });
-// });
+  const toggleSidebar = () => {
+    setIsSidebarActive(!isSidebarActive);
+  };
+
   return (
     <>
       <header>
@@ -19,7 +18,6 @@ const Header = () => {
         ></img>
 
         <ul className="links">
-          <p>≡</p>
           <Link to="/home">
             <li>Home</li>
           </Link>
@@ -31,7 +29,29 @@ const Header = () => {
           </Link>
           <li>Contact</li>
         </ul>
-        
+
+        <div id="menu-icon" onClick={toggleSidebar}>
+        {isSidebarActive ? "✖" : "≡"}
+        </div>
+
+        <ul className={`sidebar ${isSidebarActive ? 'active' : ''}`}>
+          <Link to="/home">
+            <li>Home</li>
+          </Link>
+          <Link to="/fullNews">
+            <li>News</li>
+          </Link>
+          <Link to="/fullTeam">
+            <li>Team</li>
+          </Link>
+          <li>Contact</li>
+          <div className="icons">
+              <FaInstagram />
+              <FaTwitter />
+              <FaMailBulk />
+              <FaPhone />
+            </div>
+        </ul>
       </header>
     </>
   );
