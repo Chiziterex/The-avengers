@@ -50,6 +50,7 @@ header {
 
 header.scroll{
   margin-top: 0;
+  border: 1px solid var(--txt-color-);
   transition: all .4s ease;
 }
 
