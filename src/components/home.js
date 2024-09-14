@@ -8,10 +8,9 @@ import Footer from "./footer";
 const Home = () => {
   return (
     <>
+      <Header />
       <div className="home">
         <div className="backdrop-color">
-          <Header />
-
           <div className="content">
             <h3>the avengers</h3>
             <p>
