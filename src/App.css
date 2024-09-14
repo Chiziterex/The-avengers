@@ -294,7 +294,7 @@ header ul li:hover {
 }
 
 .news .content .btn {
-  background-color: color-mix(in srgb, var(--blue) 70%, var(--backdrop-color) 30%);
+  background-color: var(--blue);
   padding: 0.5rem 1rem;
   color: var(--txt-color-2-);
   border-radius: 4px;
@@ -374,7 +374,7 @@ header ul li:hover {
 }
 
 .team .content .box-container .btn {
-  background-color: color-mix(in srgb, var(--blue) 80%, var(--backdrop-color) 20%);
+  background-color: var(--blue);
   padding: 0.5rem 1rem;
   color: var(--txt-color-2-);
   border-radius: 4px;
@@ -482,11 +482,7 @@ header ul li:hover {
 }
 
 .contact .content .report form input[type="submit"]{
-  background-color: color-mix(
-    in srgb,
-    var(--backdrop-color) 20%,
-    var(--txt-color-4-) 80%
-  );
+  background-color:var(--txt-color-4-);
   border: none;
   color: var(--txt-color-2-);
   transition: all .2s ease-in;
