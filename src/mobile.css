@@ -12,6 +12,13 @@
   .home .backdrop-color .content {
     min-height: 80vh;
   }
+  .news .content .btn,
+  .team .content .box-container .btn {
+    background-color: var(--blue);
+  }
+  .contact .content .report form input[type="submit"] {
+    background-color: var(--txt-color-4-);
+  }
 }
 
 @media (max-width: 600px) {
@@ -68,9 +75,6 @@
   .team .content .box-container .box.hide {
     display: none;
   }
-  .contact .content .report form input[type="submit"] {
-    background-color: var(--txt-color-4-);
-  }
 }
 
 @media (max-width: 400px) {
@@ -83,9 +87,5 @@
   }
   .home .backdrop-color .content {
     min-height: 100vh;
-  }
-  .news .content .btn,
-  .team .content .box-container .btn {
-    background-color: var(--blue);
   }
 }
