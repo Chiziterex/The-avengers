@@ -84,36 +84,30 @@ export const TeamData = [
     },
     {
         id: 12,
-        img: Hulk,
-        name: "Hulk",
-        briefSummary: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing"
-    },
-    {
-        id: 13,
         img: AntMan,
         name: "Ant Man",
         briefSummary: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing"
     },
     {
-        id: 14,
+        id: 13,
         img: Wanda,
         name: "Scarlet Witch",
         briefSummary: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing"
     },
     {
-        id: 15,
+        id: 14,
         img: Vision,
         name: "The Vision",
         briefSummary: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing"
     },
     {
-        id: 16,
+        id: 15,
         img: QuickSilver,
         name: "Quick Silver",
         briefSummary: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing"
     },
     {
-        id: 17,
+        id: 16,
         img: WinterSoldier,
         name: "Winter Soldier",
         briefSummary: "Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing"
