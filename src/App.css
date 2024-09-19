@@ -2,14 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
 
 :root {
-  --bg-color-: rgb(250, 196, 48);
   --bg-color-2-: whitesmoke;
   --bg-color-3-: rgb(228, 221, 221);
   --txt-color-: #000;
   --txt-color-2-: #fff;
   --txt-color-3-: #333;
-  --txt-color-4-: #f70505;
-  --blue: rgb(0, 0, 255);
+  --txt-color-4-: rgb(255, 1, 0,0.9);
+  --blue: rgb(38, 38, 248);
   --border-color-: #999;
   --backdrop-color: rgb(0, 0, 0, 0.3);
   --backdrop-color-2: rgb(255, 255, 255, 0.1);
