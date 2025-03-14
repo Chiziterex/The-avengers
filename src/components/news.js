@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Webbed from "../assets/webbed.png"
 import RustedHelmet from "../assets/rusted.png"
 import BlackWidow from "../assets/black_widow.png"
+import Shield from "../assets/shield.png"
 
 const News = () => {
   return (
@@ -14,6 +15,19 @@ const News = () => {
             <h3>news flash</h3>
 
             <div className="box-container">
+            <div className="box">
+                <img src={Shield} alt="The new captain"></img>
+                <div className="box-info">
+                  <h4>Steve Rogers?</h4>
+                  <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit.....<span>see more</span>
+                  </p>
+                  <div className="tinyinfo">
+                    <p>Sanchez Obi</p>
+                    <p>11/02/25</p>
+                  </div>
+                </div>
+              </div>
               <div className="box">
               <img src={Webbed} alt="spiderman"></img>
                 <div className="box-info">
